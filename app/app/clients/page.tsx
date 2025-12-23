@@ -1,0 +1,163 @@
+'use client';
+
+import { useEffect, useState } from 'react';
+
+type Client = {
+  id: string;
+  name: string;
+  email: string;
+};
+
+export default function ClientsPage() {
+  const [clients, setClients] = useState<Client[]>([]);
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [editingId, setEditingId] = useState<string | null>(null);
+  const [error, setError] = useState<string | null>(null);
+  const [loading, setLoading] = useState(false);
+
+  const fetchClients = async () => {
+    const response = await fetch('/api/clients');
+    if (!response.ok) return;
+    const data = await response.json();
+    setClients(data.clients ?? []);
+  };
+
+  useEffect(() => {
+    fetchClients();
+  }, []);
+
+  const resetForm = () => {
+    setName('');
+    setEmail('');
+    setEditingId(null);
+  };
+
+  const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    setError(null);
+    setLoading(true);
+
+    const payload = { name, email };
+    const response = await fetch(editingId ? `/api/clients/${editingId}` : '/api/clients', {
+      method: editingId ? 'PUT' : 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(payload)
+    });
+
+    setLoading(false);
+
+    if (!response.ok) {
+      const data = await response.json();
+      setError(data.error ?? 'Une erreur est survenue.');
+      return;
+    }
+
+    resetForm();
+    fetchClients();
+  };
+
+  const handleEdit = (client: Client) => {
+    setEditingId(client.id);
+    setName(client.name);
+    setEmail(client.email);
+  };
+
+  const handleDelete = async (id: string) => {
+    if (!confirm('Supprimer ce client ?')) return;
+    await fetch(`/api/clients/${id}`, { method: 'DELETE' });
+    fetchClients();
+  };
+
+  return (
+    <section className="space-y-6">
+      <div className="rounded-xl bg-white p-6 shadow-sm">
+        <h1 className="text-xl font-semibold">Clients</h1>
+        <form onSubmit={handleSubmit} className="mt-4 grid gap-4 md:grid-cols-3">
+          <div className="space-y-2">
+            <label htmlFor="name">Nom</label>
+            <input
+              id="name"
+              value={name}
+              onChange={(event) => setName(event.target.value)}
+              required
+            />
+          </div>
+          <div className="space-y-2">
+            <label htmlFor="email">Email</label>
+            <input
+              id="email"
+              type="email"
+              value={email}
+              onChange={(event) => setEmail(event.target.value)}
+              required
+            />
+          </div>
+          <div className="flex items-end gap-2">
+            <button
+              type="submit"
+              disabled={loading}
+              className="bg-blue-600 text-white disabled:opacity-70"
+            >
+              {editingId ? 'Mettre à jour' : 'Ajouter'}
+            </button>
+            {editingId && (
+              <button type="button" onClick={resetForm} className="border border-slate-300">
+                Annuler
+              </button>
+            )}
+          </div>
+        </form>
+        {error && <p className="mt-3 text-sm text-red-600">{error}</p>}
+      </div>
+
+      <div className="rounded-xl bg-white p-6 shadow-sm">
+        <h2 className="text-lg font-semibold">Liste</h2>
+        <div className="mt-4 overflow-x-auto">
+          <table className="w-full text-sm">
+            <thead>
+              <tr className="border-b text-left text-slate-500">
+                <th className="py-2">Nom</th>
+                <th>Email</th>
+                <th className="text-right">Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              {clients.map((client) => (
+                <tr key={client.id} className="border-b">
+                  <td className="py-2 font-medium text-slate-800">
+                    {client.name}
+                  </td>
+                  <td>{client.email}</td>
+                  <td className="flex justify-end gap-2 py-2">
+                    <button
+                      type="button"
+                      onClick={() => handleEdit(client)}
+                      className="border border-slate-300"
+                    >
+                      Modifier
+                    </button>
+                    <button
+                      type="button"
+                      onClick={() => handleDelete(client.id)}
+                      className="border border-red-200 text-red-600"
+                    >
+                      Supprimer
+                    </button>
+                  </td>
+                </tr>
+              ))}
+              {clients.length === 0 && (
+                <tr>
+                  <td colSpan={3} className="py-4 text-center text-slate-500">
+                    Aucun client pour le moment.
+                  </td>
+                </tr>
+              )}
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+  );
+}

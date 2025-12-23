@@ -1,0 +1,67 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum InvoiceStatus {
+  PAID
+  UNPAID
+}
+
+model Client {
+  id        String   @id @default(uuid())
+  userId    String
+  name      String
+  email     String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  invoices  Invoice[]
+
+  @@index([userId])
+}
+
+model Invoice {
+  id             String        @id @default(uuid())
+  userId         String
+  clientId       String
+  number         String
+  amount         Decimal       @db.Numeric(12, 2)
+  currency       String        @default("EUR")
+  issueDate      DateTime
+  dueDate        DateTime
+  status         InvoiceStatus @default(UNPAID)
+  pauseReminders Boolean       @default(false)
+  paymentLink    String?
+  createdAt      DateTime      @default(now())
+  updatedAt      DateTime      @updatedAt
+  client         Client        @relation(fields: [clientId], references: [id], onDelete: Cascade)
+  reminders      Reminder[]
+
+  @@index([userId])
+  @@index([clientId])
+}
+
+model Reminder {
+  id        String   @id @default(uuid())
+  userId    String
+  invoiceId String
+  sentAt    DateTime @default(now())
+  subject   String
+  body      String
+  channel   String   @default("email")
+  ruleDay   Int?
+  invoice   Invoice  @relation(fields: [invoiceId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
+  @@index([invoiceId])
+}
+
+model ReminderSettings {
+  id       String @id @default(uuid())
+  userId   String @unique
+  ruleDays Int[]
+}

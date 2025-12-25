@@ -1,0 +1,25 @@
+import { NextResponse } from 'next/server'
+import type { NextRequest } from 'next/server'
+import { createMiddlewareClient } from '@supabase/auth-helpers-nextjs'
+
+export async function middleware(request: NextRequest) {
+  const response = NextResponse.next({
+    request: {
+      headers: request.headers,
+    },
+  })
+
+  const supabase = createMiddlewareClient({
+    req: request,
+    res: response,
+  })
+
+  // Rafraîchit la session Supabase et propage les cookies
+  await supabase.auth.getSession()
+
+  return response
+}
+
+export const config = {
+  matcher: ['/app/:path*', '/api/:path*'],
+}

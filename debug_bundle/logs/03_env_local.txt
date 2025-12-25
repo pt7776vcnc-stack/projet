@@ -1,0 +1,5 @@
+NEXT_PUBLIC_SUPABASE_URL=https://mepckjwoghxwlsfuqkaq.supabase.co
+NEXT_PUBLIC_SUPABASE_ANON_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im1lcGNrandvZ2h4d2xzZnVxa2FxIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjY0NTc3OTMsImV4cCI6MjA4MjAzMzc5M30.q1-htvDqhrb0WObBDPcCFZJWWFHQVSIYhda-3mZ0ICw
+
+DATABASE_URL=postgresql://postgres:joVtubG89wgeVHIm@db.mepckjwoghxwlsfuqkaq.supabase.co:5432/postgres
+

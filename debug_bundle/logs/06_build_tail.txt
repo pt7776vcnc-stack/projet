@@ -1,0 +1,22 @@
+
+> relancepro@0.1.0 build
+> next build
+
+  ▲ Next.js 14.2.7
+  - Environments: .env.local
+
+   Creating an optimized production build ...
+ ✓ Compiled successfully
+   Linting and checking validity of types ...
+Failed to compile.
+
+./app/app/clients/page.tsx:53:16
+Type error: Block-scoped variable 'data' used before its declaration.
+
+[0m [90m 51 |[39m     [36mif[39m ([33m![39mresponse[33m.[39mok) {[0m
+[0m [90m 52 |[39m       [36mconst[39m data [33m=[39m [36mawait[39m[0m
+[0m[31m[1m>[22m[39m[90m 53 |[39m       setError(data[33m?[39m[33m.[39merror [33m?[39m[33m?[39m [32m"Une erreur est survenue."[39m)[33m;[39m[0m
+[0m [90m    |[39m                [31m[1m^[22m[39m[0m
+[0m [90m 54 |[39m       [36mreturn[39m[33m;[39m[0m
+[0m [90m 55 |[39m     }[0m
+[0m [90m 56 |[39m[0m

@@ -49,9 +49,8 @@ const data = text ? JSON.parse(text) : null;;
     setLoading(false);
 
     if (!response.ok) {
-      const data = await response.json().catch(() => null);
-      setError((data as any)?.error ?? "Une erreur est survenue.");
-      setLoading(false);
+      const data = await
+      setError(data?.error ?? "Une erreur est survenue.");
       return;
     }
 

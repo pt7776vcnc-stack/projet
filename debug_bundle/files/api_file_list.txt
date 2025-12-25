@@ -1,0 +1,8 @@
+app/api/clients/route.ts
+app/api/clients/[id]/route.ts
+app/api/invoices/route.ts
+app/api/invoices/[id]/route.ts
+app/api/reminder-settings/route.ts
+app/api/reminders/route.ts
+app/api/reminders/run/route.ts
+app/api/reminders/send/route.ts

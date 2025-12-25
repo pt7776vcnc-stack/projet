@@ -7,13 +7,18 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
+enum InvoiceStatus {
+  PAID
+  UNPAID
+}
+
 model Client {
-  id        String    @id @default(uuid())
+  id        String   @id @default(uuid())
   userId    String
   name      String
   email     String
-  createdAt DateTime  @default(now())
-  updatedAt DateTime  @updatedAt
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
   invoices  Invoice[]
 
   @@index([userId])
@@ -59,9 +64,4 @@ model ReminderSettings {
   id       String @id @default(uuid())
   userId   String @unique
   ruleDays Int[]
-}
-
-enum InvoiceStatus {
-  PAID
-  UNPAID
 }

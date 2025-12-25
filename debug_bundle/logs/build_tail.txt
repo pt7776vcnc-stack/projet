@@ -1,0 +1,200 @@
+    at _.getItem (/Users/evann/Downloads/relancepro/.next/server/chunks/958.js:37:55029)
+    at tC (/Users/evann/Downloads/relancepro/.next/server/chunks/958.js:24:42652)
+    at rT._recoverAndRefresh (/Users/evann/Downloads/relancepro/.next/server/chunks/958.js:37:26478)
+    at rT._initialize (/Users/evann/Downloads/relancepro/.next/server/chunks/958.js:24:71745)
+    at /Users/evann/Downloads/relancepro/.next/server/chunks/958.js:24:70584
+    at /Users/evann/Downloads/relancepro/.next/server/chunks/958.js:37:12349
+    at rT.rc [as lock] (/Users/evann/Downloads/relancepro/.next/server/chunks/958.js:24:66602) {
+  description: "Route /app/settings couldn't be rendered statically because it used `cookies`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error",
+  digest: 'DYNAMIC_SERVER_USAGE'
+}
+n [Error]: Dynamic server usage: Route /app/settings couldn't be rendered statically because it used `cookies`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error
+    at l (/Users/evann/Downloads/relancepro/.next/server/chunks/948.js:1:37329)
+    at Object.d [as cookies] (/Users/evann/Downloads/relancepro/.next/server/chunks/958.js:1:9853)
+    at _.getCookie (/Users/evann/Downloads/relancepro/.next/server/chunks/958.js:1:4590)
+    at _.getItem (/Users/evann/Downloads/relancepro/.next/server/chunks/958.js:37:55029)
+    at tC (/Users/evann/Downloads/relancepro/.next/server/chunks/958.js:24:42652)
+    at rT._recoverAndRefresh (/Users/evann/Downloads/relancepro/.next/server/chunks/958.js:37:26478)
+    at rT._initialize (/Users/evann/Downloads/relancepro/.next/server/chunks/958.js:24:71745)
+    at /Users/evann/Downloads/relancepro/.next/server/chunks/958.js:24:70584
+    at /Users/evann/Downloads/relancepro/.next/server/chunks/958.js:37:12349
+    at rT.rc [as lock] (/Users/evann/Downloads/relancepro/.next/server/chunks/958.js:24:66602) {
+  description: "Route /app/settings couldn't be rendered statically because it used `cookies`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error",
+  digest: 'DYNAMIC_SERVER_USAGE'
+}
+n [Error]: Dynamic server usage: Route /app/login couldn't be rendered statically because it used `cookies`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error
+    at l (/Users/evann/Downloads/relancepro/.next/server/chunks/948.js:1:37329)
+    at Object.d [as cookies] (/Users/evann/Downloads/relancepro/.next/server/chunks/958.js:1:9853)
+    at _.getCookie (/Users/evann/Downloads/relancepro/.next/server/chunks/958.js:1:4590)
+    at _.getItem (/Users/evann/Downloads/relancepro/.next/server/chunks/958.js:37:55029)
+    at tC (/Users/evann/Downloads/relancepro/.next/server/chunks/958.js:24:42652)
+    at rT._recoverAndRefresh (/Users/evann/Downloads/relancepro/.next/server/chunks/958.js:37:26478)
+    at rT._initialize (/Users/evann/Downloads/relancepro/.next/server/chunks/958.js:24:71745)
+    at /Users/evann/Downloads/relancepro/.next/server/chunks/958.js:24:70584
+    at /Users/evann/Downloads/relancepro/.next/server/chunks/958.js:37:12349
+    at rT.rc [as lock] (/Users/evann/Downloads/relancepro/.next/server/chunks/958.js:24:66602) {
+  description: "Route /app/login couldn't be rendered statically because it used `cookies`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error",
+  digest: 'DYNAMIC_SERVER_USAGE'
+}
+n [Error]: Dynamic server usage: Route /app/login couldn't be rendered statically because it used `cookies`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error
+    at l (/Users/evann/Downloads/relancepro/.next/server/chunks/948.js:1:37329)
+    at Object.d [as cookies] (/Users/evann/Downloads/relancepro/.next/server/chunks/958.js:1:9853)
+    at _.getCookie (/Users/evann/Downloads/relancepro/.next/server/chunks/958.js:1:4590)
+    at _.getItem (/Users/evann/Downloads/relancepro/.next/server/chunks/958.js:37:55029)
+    at tC (/Users/evann/Downloads/relancepro/.next/server/chunks/958.js:24:42652)
+    at rT._recoverAndRefresh (/Users/evann/Downloads/relancepro/.next/server/chunks/958.js:37:26478)
+    at rT._initialize (/Users/evann/Downloads/relancepro/.next/server/chunks/958.js:24:71745)
+    at /Users/evann/Downloads/relancepro/.next/server/chunks/958.js:24:70584
+    at /Users/evann/Downloads/relancepro/.next/server/chunks/958.js:37:12349
+    at rT.rc [as lock] (/Users/evann/Downloads/relancepro/.next/server/chunks/958.js:24:66602) {
+  description: "Route /app/login couldn't be rendered statically because it used `cookies`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error",
+  digest: 'DYNAMIC_SERVER_USAGE'
+}
+n [Error]: Dynamic server usage: Route /app/clients couldn't be rendered statically because it used `cookies`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error
+    at l (/Users/evann/Downloads/relancepro/.next/server/chunks/948.js:1:37329)
+    at Object.d [as cookies] (/Users/evann/Downloads/relancepro/.next/server/chunks/958.js:1:9853)
+    at _.getCookie (/Users/evann/Downloads/relancepro/.next/server/chunks/958.js:1:4590)
+    at _.getItem (/Users/evann/Downloads/relancepro/.next/server/chunks/958.js:37:55029)
+    at tC (/Users/evann/Downloads/relancepro/.next/server/chunks/958.js:24:42652)
+    at rT._recoverAndRefresh (/Users/evann/Downloads/relancepro/.next/server/chunks/958.js:37:26478)
+    at rT._initialize (/Users/evann/Downloads/relancepro/.next/server/chunks/958.js:24:71745)
+    at /Users/evann/Downloads/relancepro/.next/server/chunks/958.js:24:70584
+    at /Users/evann/Downloads/relancepro/.next/server/chunks/958.js:37:12349
+    at rT.rc [as lock] (/Users/evann/Downloads/relancepro/.next/server/chunks/958.js:24:66602) {
+  description: "Route /app/clients couldn't be rendered statically because it used `cookies`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error",
+  digest: 'DYNAMIC_SERVER_USAGE'
+}
+n [Error]: Dynamic server usage: Route /app/clients couldn't be rendered statically because it used `cookies`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error
+    at l (/Users/evann/Downloads/relancepro/.next/server/chunks/948.js:1:37329)
+    at Object.d [as cookies] (/Users/evann/Downloads/relancepro/.next/server/chunks/958.js:1:9853)
+    at _.getCookie (/Users/evann/Downloads/relancepro/.next/server/chunks/958.js:1:4590)
+    at _.getItem (/Users/evann/Downloads/relancepro/.next/server/chunks/958.js:37:55029)
+    at tC (/Users/evann/Downloads/relancepro/.next/server/chunks/958.js:24:42652)
+    at rT._recoverAndRefresh (/Users/evann/Downloads/relancepro/.next/server/chunks/958.js:37:26478)
+    at rT._initialize (/Users/evann/Downloads/relancepro/.next/server/chunks/958.js:24:71745)
+    at /Users/evann/Downloads/relancepro/.next/server/chunks/958.js:24:70584
+    at /Users/evann/Downloads/relancepro/.next/server/chunks/958.js:37:12349
+    at rT.rc [as lock] (/Users/evann/Downloads/relancepro/.next/server/chunks/958.js:24:66602) {
+  description: "Route /app/clients couldn't be rendered statically because it used `cookies`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error",
+  digest: 'DYNAMIC_SERVER_USAGE'
+}
+n [Error]: Dynamic server usage: Route /app/invoices couldn't be rendered statically because it used `cookies`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error
+    at l (/Users/evann/Downloads/relancepro/.next/server/chunks/948.js:1:37329)
+    at Object.d [as cookies] (/Users/evann/Downloads/relancepro/.next/server/chunks/958.js:1:9853)
+    at _.getCookie (/Users/evann/Downloads/relancepro/.next/server/chunks/958.js:1:4590)
+    at _.getItem (/Users/evann/Downloads/relancepro/.next/server/chunks/958.js:37:55029)
+    at tC (/Users/evann/Downloads/relancepro/.next/server/chunks/958.js:24:42652)
+    at rT._recoverAndRefresh (/Users/evann/Downloads/relancepro/.next/server/chunks/958.js:37:26478)
+    at rT._initialize (/Users/evann/Downloads/relancepro/.next/server/chunks/958.js:24:71745)
+    at /Users/evann/Downloads/relancepro/.next/server/chunks/958.js:24:70584
+    at /Users/evann/Downloads/relancepro/.next/server/chunks/958.js:37:12349
+    at rT.rc [as lock] (/Users/evann/Downloads/relancepro/.next/server/chunks/958.js:24:66602) {
+  description: "Route /app/invoices couldn't be rendered statically because it used `cookies`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error",
+  digest: 'DYNAMIC_SERVER_USAGE'
+}
+n [Error]: Dynamic server usage: Route /app/invoices couldn't be rendered statically because it used `cookies`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error
+    at l (/Users/evann/Downloads/relancepro/.next/server/chunks/948.js:1:37329)
+    at Object.d [as cookies] (/Users/evann/Downloads/relancepro/.next/server/chunks/958.js:1:9853)
+    at _.getCookie (/Users/evann/Downloads/relancepro/.next/server/chunks/958.js:1:4590)
+    at _.getItem (/Users/evann/Downloads/relancepro/.next/server/chunks/958.js:37:55029)
+    at tC (/Users/evann/Downloads/relancepro/.next/server/chunks/958.js:24:42652)
+    at rT._recoverAndRefresh (/Users/evann/Downloads/relancepro/.next/server/chunks/958.js:37:26478)
+    at rT._initialize (/Users/evann/Downloads/relancepro/.next/server/chunks/958.js:24:71745)
+    at /Users/evann/Downloads/relancepro/.next/server/chunks/958.js:24:70584
+    at /Users/evann/Downloads/relancepro/.next/server/chunks/958.js:37:12349
+    at rT.rc [as lock] (/Users/evann/Downloads/relancepro/.next/server/chunks/958.js:24:66602) {
+  description: "Route /app/invoices couldn't be rendered statically because it used `cookies`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error",
+  digest: 'DYNAMIC_SERVER_USAGE'
+}
+   Generating static pages (10/20) 
+n [Error]: Dynamic server usage: Route /app couldn't be rendered statically because it used `cookies`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error
+    at l (/Users/evann/Downloads/relancepro/.next/server/chunks/948.js:1:37329)
+    at Object.d [as cookies] (/Users/evann/Downloads/relancepro/.next/server/chunks/958.js:1:9853)
+    at _.getCookie (/Users/evann/Downloads/relancepro/.next/server/chunks/958.js:1:4590)
+    at _.getItem (/Users/evann/Downloads/relancepro/.next/server/chunks/958.js:37:55029)
+    at tC (/Users/evann/Downloads/relancepro/.next/server/chunks/958.js:24:42652)
+    at rT._recoverAndRefresh (/Users/evann/Downloads/relancepro/.next/server/chunks/958.js:37:26478)
+    at rT._initialize (/Users/evann/Downloads/relancepro/.next/server/chunks/958.js:24:71745)
+    at /Users/evann/Downloads/relancepro/.next/server/chunks/958.js:24:70584
+    at /Users/evann/Downloads/relancepro/.next/server/chunks/958.js:37:12349
+    at rT.rc [as lock] (/Users/evann/Downloads/relancepro/.next/server/chunks/958.js:24:66602) {
+  description: "Route /app couldn't be rendered statically because it used `cookies`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error",
+  digest: 'DYNAMIC_SERVER_USAGE'
+}
+n [Error]: Dynamic server usage: Route /app couldn't be rendered statically because it used `cookies`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error
+    at l (/Users/evann/Downloads/relancepro/.next/server/chunks/948.js:1:37329)
+    at Object.d [as cookies] (/Users/evann/Downloads/relancepro/.next/server/chunks/958.js:1:9853)
+    at _.getCookie (/Users/evann/Downloads/relancepro/.next/server/chunks/958.js:1:4590)
+    at _.getItem (/Users/evann/Downloads/relancepro/.next/server/chunks/958.js:37:55029)
+    at tC (/Users/evann/Downloads/relancepro/.next/server/chunks/958.js:24:42652)
+    at rT._recoverAndRefresh (/Users/evann/Downloads/relancepro/.next/server/chunks/958.js:37:26478)
+    at rT._initialize (/Users/evann/Downloads/relancepro/.next/server/chunks/958.js:24:71745)
+    at /Users/evann/Downloads/relancepro/.next/server/chunks/958.js:24:70584
+    at /Users/evann/Downloads/relancepro/.next/server/chunks/958.js:37:12349
+    at rT.rc [as lock] (/Users/evann/Downloads/relancepro/.next/server/chunks/958.js:24:66602) {
+  description: "Route /app couldn't be rendered statically because it used `cookies`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error",
+  digest: 'DYNAMIC_SERVER_USAGE'
+}
+n [Error]: Dynamic server usage: Route /app/reminders couldn't be rendered statically because it used `cookies`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error
+    at l (/Users/evann/Downloads/relancepro/.next/server/chunks/948.js:1:37329)
+    at Object.d [as cookies] (/Users/evann/Downloads/relancepro/.next/server/chunks/958.js:1:9853)
+    at _.getCookie (/Users/evann/Downloads/relancepro/.next/server/chunks/958.js:1:4590)
+    at _.getItem (/Users/evann/Downloads/relancepro/.next/server/chunks/958.js:37:55029)
+    at tC (/Users/evann/Downloads/relancepro/.next/server/chunks/958.js:24:42652)
+    at rT._recoverAndRefresh (/Users/evann/Downloads/relancepro/.next/server/chunks/958.js:37:26478)
+    at rT._initialize (/Users/evann/Downloads/relancepro/.next/server/chunks/958.js:24:71745)
+    at /Users/evann/Downloads/relancepro/.next/server/chunks/958.js:24:70584
+    at /Users/evann/Downloads/relancepro/.next/server/chunks/958.js:37:12349
+    at rT.rc [as lock] (/Users/evann/Downloads/relancepro/.next/server/chunks/958.js:24:66602) {
+  description: "Route /app/reminders couldn't be rendered statically because it used `cookies`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error",
+  digest: 'DYNAMIC_SERVER_USAGE'
+}
+n [Error]: Dynamic server usage: Route /app/reminders couldn't be rendered statically because it used `cookies`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error
+    at l (/Users/evann/Downloads/relancepro/.next/server/chunks/948.js:1:37329)
+    at Object.d [as cookies] (/Users/evann/Downloads/relancepro/.next/server/chunks/958.js:1:9853)
+    at _.getCookie (/Users/evann/Downloads/relancepro/.next/server/chunks/958.js:1:4590)
+    at _.getItem (/Users/evann/Downloads/relancepro/.next/server/chunks/958.js:37:55029)
+    at tC (/Users/evann/Downloads/relancepro/.next/server/chunks/958.js:24:42652)
+    at rT._recoverAndRefresh (/Users/evann/Downloads/relancepro/.next/server/chunks/958.js:37:26478)
+    at rT._initialize (/Users/evann/Downloads/relancepro/.next/server/chunks/958.js:24:71745)
+    at /Users/evann/Downloads/relancepro/.next/server/chunks/958.js:24:70584
+    at /Users/evann/Downloads/relancepro/.next/server/chunks/958.js:37:12349
+    at rT.rc [as lock] (/Users/evann/Downloads/relancepro/.next/server/chunks/958.js:24:66602) {
+  description: "Route /app/reminders couldn't be rendered statically because it used `cookies`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error",
+  digest: 'DYNAMIC_SERVER_USAGE'
+}
+   Generating static pages (15/20) 
+ ✓ Generating static pages (20/20)
+   Finalizing page optimization ...
+   Collecting build traces ...
+
+Route (app)                              Size     First Load JS
+┌ ○ /                                    174 B          94.1 kB
+├ ○ /_not-found                          871 B            88 kB
+├ ƒ /api/clients                         0 B                0 B
+├ ƒ /api/clients/[id]                    0 B                0 B
+├ ○ /api/health                          0 B                0 B
+├ ƒ /api/invoices                        0 B                0 B
+├ ƒ /api/invoices/[id]                   0 B                0 B
+├ ƒ /api/reminder-settings               0 B                0 B
+├ ƒ /api/reminders                       0 B                0 B
+├ ƒ /api/reminders/run                   0 B                0 B
+├ ƒ /api/reminders/send                  0 B                0 B
+├ ƒ /app                                 174 B          94.1 kB
+├ ƒ /app/clients                         1.42 kB        88.6 kB
+├ ƒ /app/invoices                        2.06 kB        89.2 kB
+├ ƒ /app/login                           1.2 kB          150 kB
+├ ƒ /app/reminders                       814 B            88 kB
+├ ƒ /app/settings                        905 B            88 kB
+├ ƒ /auth/callback                       0 B                0 B
+├ ○ /login                               1.2 kB          150 kB
+└ ○ /signup                              1.3 kB          150 kB
++ First Load JS shared by all            87.1 kB
+  ├ chunks/23-0b8f07ac7d818c29.js        31.6 kB
+  ├ chunks/fd9d1056-62aaf4b921c84028.js  53.6 kB
+  └ other shared chunks (total)          1.95 kB
+
+
+○  (Static)   prerendered as static content
+ƒ  (Dynamic)  server-rendered on demand
+
